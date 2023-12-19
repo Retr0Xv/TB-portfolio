@@ -485,6 +485,14 @@ button {
         border-radius: 50px;
     }
 
+    .projetcard:hover{
+        background: linear-gradient(to left,#ece7e1, #e74c3c, #ff6b6b, #ffa07a);  
+    }
+
+    .projetcard:hover h2,.projetcard:hover p,.projetcard:hover a {
+        color: black;
+    }
+
     .projetbutton {
         
         display: flex;
