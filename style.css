@@ -4,9 +4,6 @@ body {
     margin: 0px 0px;
 }
 
-html,body {overflow: hidden;
-    
-}
 
 a {text-decoration: none;}
 
@@ -324,7 +321,6 @@ button {
 .parcours {
     position: relative;
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     background-color: black;
     z-index: 0;
@@ -357,7 +353,7 @@ button {
 .parcours-list article  {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 420px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     margin: 15px 0px;
     align-items: center;
@@ -409,9 +405,7 @@ button {
 .a-propos {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ajustez la hauteur selon vos besoins */
-    overflow:scroll;
-    overflow-x: hidden;
+    height: 100%; /* Ajustez la hauteur selon vos besoins */
     background-color: #ece7e1;
     z-index: 0;
   }
@@ -424,7 +418,6 @@ button {
 
   .projets {position: relative;
     width: 100%;
-    height: 100vh; /* Ajustez la hauteur selon vos besoins */
     overflow: hidden;
     background-color: black;
     z-index: 0;
@@ -470,7 +463,7 @@ button {
         grid-template-rows: repeat(3, 100px);
         row-gap: 40px;
         column-gap: 40px;
-        margin-top: 100px;
+        margin: 100px 0px;
     }
 
     .projetcard h2,.projetcard p {
@@ -522,3 +515,125 @@ button {
 
     .projettxt {
         padding: left 5px; ;}
+
+@media (max-width: 960px){
+    html body {overflow: scroll;
+        overflow-x: hidden;
+        }
+    
+        .a-propos-title h1 {
+        border-left: white 5px solid;
+        border-right: white 5px solid;
+        border-radius: 50px;
+        margin: 0px;
+        padding: 14.8px 40px;   
+        }
+    
+        .next-placement a {display: none;}
+    
+        .techbull {display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        #bull1 {
+            flex-direction: column;
+            gap:20px;
+        }
+    
+        #bull2 {
+            flex-direction: column;
+            gap:20px;
+        }
+    
+        .parcours-list {flex-direction: column;
+            margin: 100px 40px;
+            PADDING: 0px;}
+        
+        .projetcardpos {display: flex;
+            flex-direction: column;
+            margin: 100px 30px;
+        }
+        
+        .parcours-title h1 {
+        border-left: black 5px solid;
+        border-right: black 5px solid;
+        border-radius: 50px;
+        margin: 0px;
+        padding: 14.8px 40px;
+        }
+    
+        .projets-title h1 {
+            border-left: white 5px solid;
+            border-right: white 5px solid;
+            border-radius: 50px;
+            margin: 0px;
+            padding: 14.8px 40px;
+            
+        }
+    
+}
+
+
+
+@media (max-width: 768px){
+
+    html body {overflow: scroll;
+    overflow-x: hidden;
+    }
+
+    .a-propos-title h1 {
+    border-left: white 5px solid;
+    border-right: white 5px solid;
+    border-radius: 50px;
+    margin: 0px;
+    padding: 14.8px 40px;   
+    }
+
+    .next-placement a {display: none;}
+
+    .techbull {display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #bull1 {
+        flex-direction: column;
+        gap:20px;
+    }
+
+    #bull2 {
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .parcours-list {flex-direction: column;
+        margin: 100px 40px;
+        PADDING: 0px;}
+    
+    .presentation-img {display: none;}
+
+    .projetcardpos {display: flex;
+        flex-direction: column;
+        margin: 100px 30px;
+    }
+    
+    .parcours-title h1 {
+    border-left: black 5px solid;
+    border-right: black 5px solid;
+    border-radius: 50px;
+    margin: 0px;
+    padding: 14.8px 40px;
+    }
+
+    .projets-title h1 {
+        border-left: white 5px solid;
+        border-right: white 5px solid;
+        border-radius: 50px;
+        margin: 0px;
+        padding: 14.8px 40px;
+        
+    }
+}
